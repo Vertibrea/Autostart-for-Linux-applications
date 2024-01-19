@@ -1,23 +1,23 @@
 #!/bin/bash
 
-# Add your desired applications/packages to autostart
+# Add your desired applications
 autostart_apps=(
     "anonsurf start"
     # Add more apps/packages as needed, one per line
 )
 
-# Function to add applications/packages to autostart
+# Function autostart
 add_to_autostart() {
     for app in "${autostart_apps[@]}"; do
         # Add the command to autostart
         echo "@reboot $app" >> ~/.autostart
     done
 
-    # Inform user about successful addition
+    # Inform user 
     echo "Applications/commands added to autostart."
 }
 
-# Main execution
+# Main CALL
 read -p "This script will add applications/commands to autostart. Do you want to continue? (y/n): " choice
 
 case "$choice" in
@@ -34,7 +34,7 @@ case "$choice" in
 esac
 #!/bin/bash
 
-# Add your desired applications/packages to autostart
+# Add your desired applicationsto autostart
 autostart_apps=(
     "anonsurf start"
     # Add more apps/packages as needed, one per line
@@ -51,7 +51,7 @@ add_to_autostart() {
     echo "Applications/commands added to autostart."
 }
 
-# Main execution
+# Main CALL
 read -p "This script will add applications/commands to autostart. Do you want to continue? (y/n): " choice
 
 case "$choice" in
